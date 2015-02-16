@@ -12,10 +12,10 @@ OpenConferenceWare.configure do |config|
   config.mailer_host = 'ocw.local'
 
   # Event name, or organization running events:
-  config.organization = 'Open Source Bridge'
+  config.organization = 'ACT-W'
 
   # Abbreviated name for use in URLs and proposal slugs.
-  config.organization_slug = 'osb'
+  config.organization_slug = 'act-w'
 
   # Top-level tagline or description.
   config.tagline = 'The conference for open source citizens'

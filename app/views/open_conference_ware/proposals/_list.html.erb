@@ -69,7 +69,7 @@ records = OpenConferenceWare::Proposal.sort(records, params[:sort] || "title", p
 
         <% if kind == :proposals %>
           <td class='date'>
-            <%= record.submitted_at.localtime.to_s if record.submitted_at.present? %>
+            <%= record.submitted_at.localtime.strftime('%b %e, %l:%M %p') if record.submitted_at.present? %>
           </td>
         <% end %>
       </tr>
