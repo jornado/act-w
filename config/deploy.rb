@@ -1,7 +1,7 @@
 # config valid only for Capistrano 3.1
 lock '3.1.0'
 
-set :chruby_ruby. 'ruby-2.1.3'
+set :chruby_ruby, 'ruby-2.1.3'
 set :application, 'actw'
 set :repo_url, 'git@bitbucket.org:poeks/act-w.git'
 
@@ -53,5 +53,10 @@ namespace :deploy do
       # within release_path do
       #   execute :rake, 'cache:clear'
       # end
+    end
+  end
+
+  after :publishing, 'deploy:restart'
+  after :finishing, 'deploy:cleanup'
 
 end
