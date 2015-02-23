@@ -10,7 +10,7 @@ gem 'capistrano-rails', '~> 1.1.1'
 # Add this if you're using rvm
 # gem 'capistrano-rvm', github: "capistrano/rvm"
 
-gem 'capistrano-chruby'
+gem 'capistrano-rvm'
 
 gem 'omniauth-github'
 gem 'pg'
