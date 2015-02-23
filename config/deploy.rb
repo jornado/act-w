@@ -30,7 +30,8 @@ set :linked_files, %w{config/database.yml config/secrets.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 # Default value for default_env is {}
-set :default_env, { path: "/home/actw/.rubies/ruby-2.1.3/bin:$PATH" }
+#set :default_env, { path: "/home/actw/.rubies/ruby-2.1.3/bin:$PATH" }
+#set :gemhome, '~/.rubies/ruby-2.1.3/lib/ruby/gems'
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
@@ -56,7 +57,7 @@ namespace :deploy do
     end
   end
 
-  after :publishing, 'deploy:restart'
-  after :finishing, 'deploy:cleanup'
+#  after :publishing, 'deploy:restart'
+#  after :finishing, 'deploy:cleanup'
 
 end
