@@ -26,7 +26,8 @@ Rails.application.config.middleware.use OpenConferenceWare::OmniAuthBuilder do
   #
   #provider :persona
   #
-  provider :eventbrite 
+
+  provider :github, ENV['GITHUB_KEY'], ENV['GITHUB_SECRET']
 
   # Developer
   # Used to provide easy authentication during development

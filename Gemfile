@@ -12,7 +12,7 @@ gem 'capistrano-rails', '~> 1.1.1'
 
 gem 'capistrano-chruby'
 
-gem 'omniauth-eventbrite'
+gem 'omniauth-github'
 gem 'pg'
 gem 'open_conference_ware', '~> 1.0.0.pre4'
 
