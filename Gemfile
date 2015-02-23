@@ -12,6 +12,7 @@ gem 'capistrano-rails', '~> 1.1.1'
 
 gem 'capistrano-rvm'
 
+gem 'omniauth-twitter'
 gem 'omniauth-github'
 gem 'pg'
 gem 'open_conference_ware', '~> 1.0.0.pre4'
