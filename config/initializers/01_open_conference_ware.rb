@@ -52,7 +52,7 @@ OpenConferenceWare.configure do |config|
   config.have_proposal_excerpts = true
 
   # Do events have tracks?
-  config.have_event_tracks = true
+  config.have_event_tracks = false
 
   # Do events have session types?
   config.have_event_session_types = true
@@ -73,7 +73,7 @@ OpenConferenceWare.configure do |config|
   config.have_event_rooms = true
 
   # Should a proposal ask for the submitter's speaking experience?
-  config.have_proposal_speaking_experience = true
+  config.have_proposal_speaking_experience = false
 
   # Can proposals have start times?
   config.have_proposal_start_times = true
@@ -94,9 +94,6 @@ OpenConferenceWare.configure do |config|
   #
   # Set this to a blank array to disable audience levels
   config.proposal_audience_levels = [
-    {slug: 'a', label: 'Beginner'},
-    {slug: 'b', label: 'Intermediate'},
-    {slug: 'c', label: 'Advanced'}
   ]
 
   # What message is displayed as a hint to explain the audience level?
@@ -108,7 +105,7 @@ OpenConferenceWare.configure do |config|
   # instance, that provides a place for attendees to take notes.
 
   # URL where OCW is installed
-  config.app_root_url = 'http://opensourcebridge.org/'
+  config.app_root_url = 'http://act-w.org/'
 
   # URL of wiki with session notes (optional). This 'printf' format contains
   # positional variables that filled by Proposal#session_notes_url:
