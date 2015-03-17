@@ -3,7 +3,7 @@ module OpenConferenceWare
 
     # Root path!
     def welcome event=nil
-      puts "hi"
     end
+
   end
 end

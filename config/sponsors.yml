@@ -1,0 +1,8 @@
+portland:
+  - name: Esri
+    image: esri_logo.png
+  - name: eBay
+    image: ebay_logo.png
+seattle:
+  - name: Microsoft
+  image: microsoft.png
