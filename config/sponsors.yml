@@ -5,4 +5,4 @@ portland:
     image: ebay_logo.png
 seattle:
   - name: Microsoft
-  image: microsoft.png
+    image: microsoft.png

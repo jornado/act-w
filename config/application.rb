@@ -21,5 +21,8 @@ module ActW
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     #
+
+    SPONSORS_FILE = File.join ".", "config", "sponsors.yml"
+    SPONSORS = YAML.load_file(SPONSORS_FILE)
   end
 end

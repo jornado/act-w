@@ -1,0 +1,15 @@
+<div>
+<% if ActW::Application::SPONSORS[@event.slug] %>
+
+  <ul>
+  <% ActW::Application::SPONSORS[@event.slug].each do |sponsor| %>
+    <li><img src="<%= sponsor['image'] %>"/></li>
+  <% end %>
+  </ul>
+
+<% else %>
+  <p>Check back soon for sponsors!</p>  
+<% end %>
+
+</div>
+
