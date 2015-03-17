@@ -1,11 +1,9 @@
 ActW::Application.routes.draw do
-  get "main/sponsors"
   mount OpenConferenceWare::Engine => "/"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'events#welcome'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -61,7 +59,8 @@ end
 OpenConferenceWare::Engine.routes.draw do
 
   resources :events do 
-    get '/sponsors' => 'events#sponsors', as: :sponsors
+    get '/sponsors' => 'events#sponsors', as: :events_sponsors
+    get '/welcome' => 'events#welcome', as: :events_welcome
   end
 
 end
