@@ -1,7 +1,5 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
 ### Installation shit ###
 
 * Install postgres
@@ -10,34 +8,25 @@ This README would normally document whatever steps are necessary to get your app
 * bundle install
 * bundle exec rake db:migrate
 * bundle exec rake open_conference_ware:setup
+* [is there a javascript thing that needs to be installed...?]
 
-* Add an event
+* Add an Event
 * Add Session Types
 * Add Tracks
 * Complete User Profile
 
-### What is this repository for? ###
+### How do I do stuff? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
+* Deploy changes:
+    `cd /home/actw/act-w`
+    `git pull`
+* Restart the server:
+    `sudo service nginx restart`
+* Edit server config, including redirects:
+    `sudo vim /etc/nginx/sites-enabled/default`
+* See trello for server login info
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* Jen Oslislo joslislo@gmail.com
+* Janice Levenhagen janice.levenhagen@chicktech.org
