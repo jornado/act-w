@@ -5,6 +5,8 @@
 * Install postgres
 * Install ImageMagick`
 * Copy over `config/database.yml` and `config/secrets.yml`
+* `createdb actw_production`
+* `createuser actw -W # use password from database.yml`
 * `bundle install`
 * `bundle exec rake db:migrate`
 * `bundle exec rake open_conference_ware:setup`
