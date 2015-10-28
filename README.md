@@ -24,7 +24,7 @@
 * Restart the server:
     `sudo service nginx restart`
 * Edit server config, including redirects:
-    `sudo vim /etc/nginx/sites-enabled/dev.act-w.org`
+    `sudo vim /etc/nginx/sites-enabled`
 * See trello for server login info
 * Repo is at: https://github.com/Shaelyn-Watson/act-w
  
